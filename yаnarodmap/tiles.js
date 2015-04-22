@@ -1,5 +1,5 @@
 function computeUrl(mapName,x,y,z) {
-        var url = "http://wvec.maps.yandex.net/?x="
+        var url = "https://01.rdr.um.maps.yandex.net/?l=mpskl&x="
                 +"&x="+x
                 +"&y="+y
                 +"&z="+(z-1)
