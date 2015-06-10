@@ -5,7 +5,7 @@ function computeUrl(mapName,x,y,z) {
     // A - Единица глубины: 1 - метры, 2 - футы
     // B - Безопасная глубина: 0 - 20 метров, 1 - 10 метров, 2 - 5 метров, 3 - 2 метра, 4 - нет
     // C - SonarCharts: 0 - выкл, 1 - вкл
-    // D - Ski Map: 0 - Нет, 1 - Да
+    // D - Ski Map: 0 - Нет, 1 - Да 
     +'&TRANSPARENT=TRUE' // Прозрачность: TRUE или FALSE
     +'&navtoken=TmF2aW9uaWNzX2ludGVybmFscHVycG9zZV8wMDAwMSt3ZWJhcGl2Mi5uYXZpb25pY3MuY29t';
     return url;        
