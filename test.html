@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <style type="text/css">
     body > div{
@@ -16,19 +17,20 @@
       border: 2px solid red;
     }
   </style>
-
 </head>
-<body>
-  <script type="text/javascript">
-  var maps_directories=['4umaps.eu','ArcGIS.Hybrid','beeline_2g','beeline_3g','beeline_4g','bing.map','Both','cadastre_ortofoto','chepetsk.net','DeKarta','forecast_precip_day','forecast_precip_evening','forecast_precip_morning','forecast_precip_tomorrow_day','forecast_pressure_day','forecast_pressure_evening','forecast_pressure_morning','forecast_pressure_tomorrow_day','forecast_temperature_day','forecast_temperature_evening','forecast_temperature_morning','forecast_temperature_tomorrow_day','forecast_wind_day','forecast_wind_evening','forecast_wind_morning','forecast_wind_tomorrow_day','genshtab250m','here.com.hybrid','here.com.satellite','here.com.terrain','land','map','mapbox_map','mapbox_sat','maps.sputnik.ru','mapsurfer_altitude_contour','maps.yandex.com.Hybrid','maps.yandex.com.Map','Megafon_2G','MTS_2G','navionics_layer','navionics_map','Navitel','NavitelProbki','openseamap_seamark','OpenTopoMap','osm_CycleMap','osm_gps_tile','osmmapMapnik','OSM_mapsurfer','OSM_mapsurfer_hillshade','OSM_mapsurfer_hybrid','OSM_opnvkarte','ovi_com_Hyb','ovi_com_map','ovi_com_Sat','Pano','rosreestr','rosreestr_hyb','sat','tele2_2g','tele2_3g','tele2_4g','Topomapper2km','topo_marshruty','ukraine_kadastr_map','ukraine_luxena','visicom_world_ru','WikiMapHyb','yahyb','yanarodnaya','yasat','yatraf','YOTA','yаnarodmap','yаnarodmap2015',];
-  
-  function testMap(url, name){
-    document.body.innerHTML += '<div><h1>'+name+'</h1><img onload="this.style.borderColor=\'green\'" src='+url+' /></div>';
-  }
 
-  maps_directories.forEach(function(item){
-    document.write('<'+'script onload="testMap(computeUrl(\''+item+'\', 4, 18, 7), \''+item+'\')" class="map-script" id="'+item+'" type="text/javascript" src="'+item+'/tiles.js"><'+'/'+'script>');
-  });
+<body>
+
+  <script type="text/javascript">
+    var maps_directories=['4umaps.eu','ArcGIS.Hybrid','beeline_2g','beeline_3g','beeline_4g','bing.map','Both','cadastre_ortofoto','chepetsk.net','DeKarta','forecast_precip_day','forecast_precip_evening','forecast_precip_morning','forecast_precip_tomorrow_day','forecast_pressure_day','forecast_pressure_evening','forecast_pressure_morning','forecast_pressure_tomorrow_day','forecast_temperature_day','forecast_temperature_evening','forecast_temperature_morning','forecast_temperature_tomorrow_day','forecast_wind_day','forecast_wind_evening','forecast_wind_morning','forecast_wind_tomorrow_day','genshtab250m','here.com.hybrid','here.com.satellite','here.com.terrain','land','map','mapbox_map','mapbox_sat','maps.sputnik.ru','mapsurfer_altitude_contour','maps.yandex.com.Hybrid','maps.yandex.com.Map','Megafon_2G','MTS_2G','navionics_layer','navionics_map','Navitel','NavitelProbki','openseamap_seamark','OpenTopoMap','osm_CycleMap','osm_gps_tile','osmmapMapnik','OSM_mapsurfer','OSM_mapsurfer_hillshade','OSM_mapsurfer_hybrid','OSM_opnvkarte','ovi_com_Hyb','ovi_com_map','ovi_com_Sat','Pano','rosreestr','rosreestr_hyb','sat','tele2_2g','tele2_3g','tele2_4g','Topomapper2km','topo_marshruty','ukraine_kadastr_map','ukraine_luxena','visicom_world_ru','WikiMapHyb','yahyb','yanarodnaya','yasat','yatraf','YOTA','yаnarodmap','yаnarodmap2015',];
+  
+    function testMap(url, name){
+      document.body.innerHTML += '<div><h1>'+name+'</h1><img onload="this.style.borderColor=\'green\'" src='+url+' /></div>';
+    }
+
+    maps_directories.forEach(function(item){
+      document.write('<'+'script onload="testMap(computeUrl(\''+item+'\', 4, 18, 7), \''+item+'\')" class="map-script" id="'+item+'" type="text/javascript" src="'+item+'/tiles.js"><'+'/'+'script>');
+    });
 
   
   </script>
