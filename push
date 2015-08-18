@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git add .
-git commit add -m'push'
+git commit -m'push'
 DIRECTORIES_LIST=$(ls -d --format=commas */)
 DIRECTORIES=$(for i in $DIRECTORIES_LIST, ; do printf "\'%s\'," ${i%%/,}; done) 
 sed -i "s|var maps_directories=.*;|var maps_directories=[$DIRECTORIES];|g" test.html
