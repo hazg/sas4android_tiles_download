@@ -6,3 +6,4 @@ sed -i "s|var maps_directories=.*;|var maps_directories=[$DIRECTORIES];|g" TestM
 
 git add .
 git commit -m'push'
+git push
